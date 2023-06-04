@@ -1,0 +1,1728 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hallo mia",
+        "hai mia",
+        "halo mia",
+        "hei mia",
+        "hi mia",
+        "hy mia",
+        "pagi",
+        "morning",
+        "siang",
+        "afternoon",
+        "sore",
+        "malam",
+        "bro",
+        "sis",
+        "kawan",
+        "mia"
+      ],
+      "responses": [
+        "Halo! Saya Mia, selamat datang di layanan pemesanan kami. Bagaimana saya dapat membantu Anda hari ini?",
+        "Selamat datang di layanan pemesanan kami, saya Mia! Bagaimana saya bisa membantu Anda hari ini?",
+        "Hai! Terima kasih telah menggunakan layanan pemesanan kami. Ada yang bisa saya bantu, Mia?",
+        "Selamat datang! Saya Mia, siap membantu Anda dalam proses pemesanan. Ada yang ingin Anda pesan?",
+        "Halo! Senang bisa membantu Anda dengan pemesanan Anda hari ini, Mia. Apa yang ingin Anda lakukan?",
+        "Selamat datang di bot pelayanan pemesanan kami, Mia. Saya siap untuk melayani kebutuhan pemesanan Anda.",
+        "Hai, apa kabar? Saya Mia, siap membantu Anda dengan segala kebutuhan pemesanan yang Anda miliki.",
+        "Selamat datang di layanan pemesanan kami, Mia! Jangan ragu untuk bertanya jika ada yang perlu Anda tanyakan.",
+        "Halo! Saya Mia, siap membantu Anda dengan pemesanan Anda. Bagaimana saya dapat memenuhi kebutuhan Anda?",
+        "Hai, selamat datang! Saya Mia, bot pelayanan pemesanan yang siap membantu Anda. Apa yang dapat saya lakukan untuk Anda hari ini?",
+        "Selamat datang di bot pemesanan kami, Mia! Saya siap untuk melayani permintaan dan pesanan Anda dengan cepat dan efisien."
+      ]      
+    },
+    {
+      "tag": "makanan",
+      "patterns": [
+        "Ada menu apa?",
+        "Ada menu makanan apa?",
+        "Bisakah saya melihat daftar menu?",
+        "Bisakah saya melihat daftar menu makanannya?",
+        "Menunya?",
+        "Ada apa saja di menu?",
+        "Ada makanan apa saja di menu?",
+        "makanan?",
+        "makanannya?",
+        "aku mau makan",
+        "mau lihat menu dulu",
+        "lihat menunya",
+        "menunya mana?",
+        "mau pesan makan",
+        "aku belum belum pesan, mau lihat menu dulu",
+        "boleh aku lihat menunya?",
+        "menu",
+        "tolong list menunya",
+        "list menu",
+        "mau makanannya dong mia",
+        "mau makanan dong mia",
+        "listnya"
+      ],
+      "responses": [
+        "Tentu! Berikut adalah daftar menu makanan kami: "
+      ]
+    },
+    {
+      "tag": "minuman",
+      "patterns": [
+        "menu minuman?",
+        "Minuman apa yang tersedia?",
+        "Bisakah saya melihat daftar menu minuman?",
+        "minumannya?",
+        "Ada minuman apa saja di menu?",
+        "Apa minuman yang tersedia?",
+        "Minuman apa yang bisa saya pesan?",
+        "aku mau minum",
+        "aku mau pesan minum",
+        "minumannya?",
+        "minumnya?",
+        "mau minumannya dong mia",
+        "mau minuman dong mia"
+      ],
+      "responses": [
+        "Tentu! Berikut adalah daftar minuman kami: "
+      ]
+    },
+    {
+      "tag": "sidedish",
+      "patterns": [
+        "menu sidedish?",
+        "Sidedish apa yang tersedia?",
+        "Bisakah saya melihat daftar menu sidedish?",
+        "sidedish?",
+        "Ada Sidedish apa saja di menu?",
+        "Apa Sidedish yang tersedia?",
+        "Sidedish apa yang bisa saya pesan?",
+        "aku mau sidedish",
+        "sidedishnya dong",
+        "side dish?",
+        "aku mau pesan sidedishnya",
+        "mau sidedishnya dong mia",
+        "mau sidedish dong mia"
+      ],
+      "responses": [
+        "Tentu! Berikut adalah daftar menu sidedish kami: "
+      ]
+    },
+    {
+      "tag": "qty1",
+      "patterns": [
+        "satu",
+        "aku mau 1 ya",
+        "aku pesan 1",
+        "1 ya",
+        "pesan 1 aja",
+        "1 pcs",
+        "1 saja",
+        "1 pax"
+      ],
+      "responses": [
+        "1"
+      ]
+    },
+    {
+      "tag": "qty2",
+      "patterns": [
+        "dua",
+        "aku mau 2 ya",
+        "aku pesan 2",
+        "2 ya",
+        "pesan 2 aja",
+        "2 pcs",
+        "2 saja",
+        "2 pax"
+      ],
+      "responses": [
+        "2"
+      ]
+    },
+    {
+      "tag": "qty3",
+      "patterns": [
+        "tiga",
+        "aku mau 3 ya",
+        "aku pesan 3",
+        "3 ya",
+        "pesan 3 aja",
+        "3 pcs",
+        "3 saja",
+        "3 pax"
+      ],
+      "responses": [
+        "3"
+      ]
+    },
+    {
+      "tag": "qty4",
+      "patterns": [
+        "empat",
+        "aku mau 4 ya",
+        "aku pesan 4",
+        "4 ya",
+        "pesan 4 aja",
+        "4 pcs",
+        "4 saja",
+        "4 pax"
+      ],
+      "responses": [
+        "4"
+      ]
+    },
+    {
+      "tag": "qty5",
+      "patterns": [
+        "lima",
+        "aku mau 5 ya",
+        "aku pesan 5",
+        "5 ya",
+        "pesan 5 aja",
+        "5 pcs",
+        "5 saja",
+        "5 pax"
+      ],
+      "responses": [
+        "5"
+      ]
+    },
+    {
+      "tag": "qty6",
+      "patterns": [
+        "enam",
+        "aku mau 6 ya",
+        "aku pesan 6",
+        "6 ya",
+        "pesan 6 aja",
+        "6 pcs",
+        "6 saja",
+        "6 pax"
+      ],
+      "responses": [
+        "6"
+      ]
+    },
+    {
+      "tag": "qty7",
+      "patterns": [
+        "aku mau 7 ya",
+        "aku pesan 7",
+        "tujuh",
+        "7 ya",
+        "pesan 7 aja",
+        "7 pcs",
+        "7 saja",
+        "7 pax"
+      ],
+      "responses": [
+        "7"
+      ]
+    },
+    {
+      "tag": "qty8",
+      "patterns": [
+        "aku mau 8 ya",
+        "aku pesan 8",
+        "delapan",
+        "8 ya",
+        "pesan 8 aja",
+        "8 pcs",
+        "8 saja",
+        "8 pax"
+      ],
+      "responses": [
+        "8"
+      ]
+    },
+    {
+      "tag": "qty9",
+      "patterns": [
+        "sembilan",
+        "aku mau 9 ya",
+        "aku pesan 9",
+        "9 ya",
+        "pesan 9 aja",
+        "9 pcs",
+        "9 saja",
+        "9 pax"
+      ],
+      "responses": [
+        "9"
+      ]
+    },
+    {
+      "tag": "qty10",
+      "patterns": [
+        "sepuluh",
+        "aku mau 10 ya",
+        "aku pesan 10",
+        "10 ya",
+        "pesan 10 aja",
+        "10 pcs",
+        "10 saja",
+        "10 pax"
+      ],
+      "responses": [
+        "10"
+      ]
+    },
+    {
+      "tag": "qty_not_available",
+      "patterns": [
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "50",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67",
+        "68",
+        "69",
+        "70",
+        "71",
+        "72",
+        "73",
+        "74",
+        "75",
+        "76",
+        "77",
+        "78",
+        "79",
+        "80",
+        "81",
+        "82",
+        "83",
+        "84",
+        "85",
+        "86",
+        "87",
+        "88",
+        "89",
+        "90",
+        "91",
+        "92",
+        "93",
+        "94",
+        "95",
+        "96",
+        "97",
+        "98",
+        "99",
+        "100",
+        "101",
+        "102",
+        "103",
+        "104",
+        "105",
+        "106",
+        "107",
+        "108",
+        "109",
+        "110",
+        "111",
+        "112",
+        "113",
+        "114",
+        "115",
+        "116",
+        "117",
+        "118",
+        "119",
+        "110",
+        "121",
+        "122",
+        "123",
+        "124",
+        "125",
+        "126",
+        "127",
+        "128",
+        "129",
+        "130",
+        "131",
+        "132",
+        "133",
+        "134",
+        "135",
+        "136",
+        "137",
+        "138",
+        "139",
+        "140",
+        "141",
+        "142",
+        "143",
+        "144",
+        "145",
+        "146",
+        "147",
+        "148",
+        "149",
+        "150"
+      ],
+      "responses": [
+        "Mohon Maaf, untuk sekarang pesanannya cuma maximal 10 nih. Silahkan masukkan jumlahnya lagi ya."
+      ]
+    },
+    {
+      "tag": "confirmation",
+      "patterns": [
+        "Berapa total harga pesanan saya?",
+        "berapa totalnya?",
+        "total semuanya berapa?",
+        "totalnya berapa?",
+        "billnya",
+        "bill"
+      ],
+      "responses": [
+        "Baik, Berikut Pesanan Anda: "
+      ]
+    },
+    {
+      "tag": "order",
+      "patterns": [
+        "aku mau pesan",
+        "mia aku mau pesan makanan",
+        "mia aku lapar",
+        "mau pesan dong mia"
+      ],
+      "responses": [
+        "Halo! Saya Mia, pelayan AI restoran ini. Saya siap melayani pesanan makanan, minuman, dan side dish di sini.<br>Silakan pilih mau list menu apa yang ingin Mia berikan terlebih dahulu.<br>Berikut beberapa pilihan menu Mia: <br>- List Menu Makanan <br>- List Menu Minuman <br>- List Menu Side Dish <br>Silakan pilih salah satu pilihan di atas ya, dan Mia akan memberikan daftar menu yang sesuai. Jika Anda memiliki pertanyaan atau butuh bantuan, jangan ragu untuk mengajukannya. Selamat memesan!"
+      ]
+    },
+    {
+      "tag": "orderan",
+      "patterns": [
+        "aku pesan ini dulu",
+        "pesan ini dulu"
+      ],
+      "responses": [
+        "Baik, Pesananmu sudah Mia masukkan kedalam waiting list, Silahkan menunggu yaa..."
+      ]
+    },
+    {
+      "tag": "payment",
+      "patterns": [
+        "Bagaimana cara pembayaran?",
+        "cara bayarnya?",
+        "bayar",
+        "aku mau bayar"
+      ],
+      "responses": [
+        "Pembayarannya dapat dilakukan dengan 2 cara :"
+      ]
+    },
+    {
+      "tag": "yes",
+      "patterns": [
+        "iya",
+        "ya",
+        "yes",
+        "mau",
+        "boleh"
+      ],
+      "responses": [
+        "Baik, Silahkan Pilih Mau Menambah Pesanan yang mana? Makanan? Minuman? Atau Sidedish Kita?"
+      ]
+    },
+    {
+      "tag": "no",
+      "patterns": [
+        "tidak",
+        "gak",
+        "tidak mau",
+        "tidak terima kasih",
+        "no"
+      ],
+      "responses": [
+        "no"
+      ]
+    },
+    {
+      "tag": "0",
+      "patterns": [
+        "aku mau pesan nasi goreng",
+        "aku mau nasi goreng",
+        "nasi goreng",
+        "pesan nasi goreng",
+        "mau nasi goreng",
+        "nasi gorengnya ya"
+      ],
+      "responses": [
+        "0"
+      ]
+    },
+    {
+      "tag": "1",
+      "patterns": [
+        "aku mau pesan indomie goreng", 
+        "aku mau indomie goreng",
+        "indomie goreng",
+        "pesan indomie goreng", 
+        "mau indomie goreng", 
+        "indomie gorengnya ya"
+      ],
+      "responses": [
+        "1"
+      ]
+    },
+    {
+      "tag": "2",
+      "patterns": [
+        "aku mau pesan nasi ayam", 
+        "aku mau nasi ayam", 
+        "nasi ayam",
+        "pesan nasi ayam",  
+        "mau nasi ayam", 
+        "nasi ayamnya ya"
+      ],
+      "responses": [
+        "2"
+      ]
+    },
+    {
+      "tag": "3",
+      "patterns": [
+        "aku mau pesan ayam goreng", 
+        "aku mau ayam goreng",
+        "ayam goreng",
+        "pesan ayam goreng", 
+        "mau ayam goreng", 
+        "ayam gorengnya ya" 
+      ],
+      "responses": [
+        "3"
+      ]
+    },
+    {
+      "tag": "4",
+      "patterns": [
+        "aku mau pesan ayam bakar",
+        "aku mau ayam bakar",
+        "ayam bakar",
+        "pesan ayam bakar",
+        "mau ayam bakar",
+        "ayam bakarnya ya"
+      ],
+      "responses": [
+        "4"
+      ]
+    },
+    {
+      "tag": "5",
+      "patterns": [
+        "aku mau pesan ayam rica-rica",
+        "aku mau ayam rica-rica",
+        "ayam rica-rica",
+        "pesan ayam rica-rica",
+        "mau ayam rica-rica",
+        "ayam rica-ricanya ya"
+      ],
+      "responses": [
+        "5"
+      ]
+    },
+    {
+      "tag": "6",
+      "patterns": [
+        "aku mau pesan ayam kecap", 
+        "aku mau ayam kecap",
+        "ayam kecap",
+        "pesan ayam kecap", 
+        "mau ayam kecap", 
+        "ayam kecapnya ya"
+      ],
+      "responses": [
+        "6"
+      ]
+    },
+    {
+      "tag": "7",
+      "patterns": [
+        "aku mau pesan ayam sambal", 
+        "aku mau ayam sambal",
+        "ayam sambal",
+        "pesan ayam sambal", 
+        "mau ayam sambal", 
+        "ayam sambalnya ya"
+      ],
+      "responses": [
+        "7"
+      ]
+    },
+    {
+      "tag": "8",
+      "patterns": [
+        "aku mau pesan ayam rendang", 
+        "aku mau ayam rendang",
+        "ayam rendang",
+        "pesan ayam rendang", 
+        "mau ayam rendang", 
+        "ayam rendangnya ya"
+      ],
+      "responses": [
+        "8"
+      ]
+    },
+    {
+      "tag": "9",
+      "patterns": [
+        "aku mau pesan ayam gulai", 
+        "aku mau ayam gulai",
+        "ayam gulai",
+        "pesan ayam gulai", 
+        "mau ayam gulai", 
+        "ayam gulainya ya"
+      ],
+      "responses": [
+        "9"
+      ]
+    },
+    {
+      "tag": "10",
+      "patterns": [
+        "aku mau pesan cumi saus tiram", 
+        "aku mau cumi saus tiram",
+        "cumi saus tiram",
+        "pesan cumi saus tiram", 
+        "mau cumi saus tiram", 
+        "cumi saus tiramnya ya"
+      ],
+      "responses": [
+        "10"
+      ]
+    },
+    {
+      "tag": "11",
+      "patterns": [
+        "aku mau pesan cumi sambal", 
+        "aku mau cumi sambal",
+        "cumi sambal",
+        "pesan cumi sambal", 
+        "mau cumi sambal", 
+        "cumi sambalnya ya"
+      ],
+      "responses": [
+        "11"
+      ]
+    },
+    {
+      "tag": "12",
+      "patterns": [
+        "aku mau pesan cumi bakar", 
+        "aku mau cumi bakar",
+        "cumi bakar",
+        "pesan cumi bakar", 
+        "mau cumi bakar", 
+        "cumi bakarnya ya"
+      ],
+      "responses": [
+        "12"
+      ]
+    },
+    {
+      "tag": "13",
+      "patterns": [
+        "aku mau pesan sup iga", 
+        "aku mau sup iga",
+        "sup iga",
+        "pesan sup iga", 
+        "mau sup iga", 
+        "sup iganya ya"
+      ],
+      "responses": [
+        "13"
+      ]
+    },
+    {
+      "tag": "14",
+      "patterns": [
+        "aku mau pesan iga bakar", 
+        "aku mau iga bakar",
+        "iga bakar",
+        "pesan iga bakar", 
+        "mau iga bakar", 
+        "iga bakarnya ya"
+      ],
+      "responses": [
+        "14"
+      ]
+    },
+    {
+      "tag": "15",
+      "patterns": [
+        "aku mau pesan daging rendang", 
+        "aku mau daging rendang",
+        "daging rendang",
+        "pesan daging rendang", 
+        "mau daging rendang", 
+        "daging rendangnya ya"
+      ],
+      "responses": [
+        "15"
+      ]
+    },
+    {
+      "tag": "16",
+      "patterns": [
+        "aku mau pesan daging balado", 
+        "aku mau daging balado",
+        "daging balado",
+        "pesan daging balado", 
+        "mau daging balado", 
+        "daging baladonya ya"
+      ],
+      "responses": [
+        "16"
+      ]
+    },
+    {
+      "tag": "17",
+      "patterns": [
+        "aku mau pesan daging gulai", 
+        "aku mau daging gulai",
+        "daging gulai",
+        "pesan daging gulai", 
+        "mau daging gulai", 
+        "daging gulainya ya"
+      ],
+      "responses": [
+        "17"
+      ]
+    },
+    {
+      "tag": "18",
+      "patterns": [
+        "aku mau pesan chicken katsu", 
+        "aku mau chicken katsu",
+        "chicken katsu",
+        "pesan chicken katsu", 
+        "mau chicken katsu", 
+        "chicken katsunya ya"
+      ],
+      "responses": [
+        "18"
+      ]
+    },
+    {
+      "tag": "19",
+      "patterns": [
+        "aku mau pesan chicken steak", 
+        "aku mau chicken steak",
+        "chicken steak",
+        "pesan chicken steak", 
+        "mau chicken steak", 
+        "chicken steaknya ya"
+      ],
+      "responses": [
+        "19"
+      ]
+    },
+    {
+      "tag": "20",
+      "patterns": [
+        "aku mau pesan wagyu steak", 
+        "aku mau wagyu steak",
+        "wagyu steak",
+        "pesan wagyu steak", 
+        "mau wagyu steak", 
+        "wagyu steaknya ya"
+      ],
+      "responses": [
+        "20"
+      ]
+    },
+    {
+      "tag": "21",
+      "patterns": [
+        "aku mau pesan popcorn chicken", 
+        "aku mau popcorn chicken",
+        "popcorn chicken",
+        "pesan popcorn chicken", 
+        "mau popcorn chicken", 
+        "popcorn chickennya ya"
+      ],
+      "responses": [
+        "21"
+      ]
+    },
+    {
+      "tag": "22",
+      "patterns": [
+        "aku mau pesan salmon teriyaki", 
+        "aku mau salmon teriyaki",
+        "salmon teriyaki",
+        "pesan salmon teriyaki", 
+        "mau salmon teriyaki", 
+        "salmon teriyakinya ya"
+      ],
+      "responses": [
+        "22"
+      ]
+    },
+    {
+      "tag": "23",
+      "patterns": [
+        "aku mau pesan baked salmon", 
+        "aku mau baked salmon",
+        "baked salmon",
+        "pesan baked salmon", 
+        "mau baked salmon", 
+        "baked salmonnya ya"
+      ],
+      "responses": [
+        "23"
+      ]
+    },
+    {
+      "tag": "24",
+      "patterns": [
+        "aku mau pesan crispy calamari", 
+        "aku mau crispy calamari",
+        "crispy calamari",
+        "pesan crispy calamari", 
+        "mau crispy calamari", 
+        "crispy calamarinya ya"
+      ],
+      "responses": [
+        "24"
+      ]
+    },
+    {
+      "tag": "25",
+      "patterns": [
+        "aku mau pesan burger", 
+        "aku mau burger",
+        "burger",
+        "pesan burger", 
+        "mau burger", 
+        "burgernya ya"
+      ],
+      "responses": [
+        "25"
+      ]
+    },
+    {
+      "tag": "26",
+      "patterns": [
+        "aku mau pesan pizza", 
+        "aku mau pizza",
+        "pizza",
+        "pesan pizza", 
+        "mau pizza", 
+        "pizzanya ya"
+      ],
+      "responses": [
+        "26"
+      ]
+    },
+    {
+      "tag": "27",
+      "patterns": [
+        "aku mau pesan la pasta", 
+        "aku mau la pasta",
+        "la pasta",
+        "pesan la pasta", 
+        "mau la pasta", 
+        "la pastanya ya"
+      ],
+      "responses": [
+        "27"
+      ]
+    },
+    {
+      "tag": "28",
+      "patterns": [
+        "aku mau pesan spagheti", 
+        "aku mau spagheti",
+        "spagheti",
+        "pesan spagheti", 
+        "mau spagheti", 
+        "spaghetinya ya"
+      ],
+      "responses": [
+        "28"
+      ]
+    },
+    {
+      "tag": "29",
+      "patterns": [
+        "aku mau pesan salad", 
+        "aku mau salad",
+        "salad",
+        "pesan salad", 
+        "mau salad", 
+        "saladnya ya"
+      ],
+      "responses": [
+        "29"
+      ]
+    },
+    {
+      "tag": "30",
+      "patterns": [
+        "aku mau pesan chocolate cake", 
+        "aku mau chocolate cake",
+        "chocolate cake",
+        "pesan chocolate cake", 
+        "mau chocolate cake", 
+        "chocolate cakenya ya"
+      ],
+      "responses": [
+        "30"
+      ]
+    },
+    {
+      "tag": "31",
+      "patterns": [
+        "aku mau pesan green tea cake", 
+        "aku mau green tea cake",
+        "green tea cake",
+        "pesan green tea cake", 
+        "mau green tea cake", 
+        "green tea cakenya ya"
+      ],
+      "responses": [
+        "31"
+      ]
+    },
+    {
+      "tag": "32",
+      "patterns": [
+        "aku mau pesan tiramisu cake", 
+        "aku mau tiramisu cake",
+        "tiramisu cake",
+        "pesan tiramisu cake", 
+        "mau tiramisu cake", 
+        "tiramisu cakenya ya"
+      ],
+      "responses": [
+        "32"
+      ]
+    },
+    {
+      "tag": "33",
+      "patterns": [
+        "aku mau pesan coffee cake", 
+        "aku mau coffee cake",
+        "coffee cake",
+        "pesan coffee cake", 
+        "mau coffee cake", 
+        "coffee cakenya ya"
+      ],
+      "responses": [
+        "33"
+      ]
+    },
+    {
+      "tag": "34",
+      "patterns": [
+        "aku mau pesan vanilla cake", 
+        "aku mau vanilla cake",
+        "vanilla cake",
+        "pesan vanilla cake", 
+        "mau vanilla cake", 
+        "vanilla cakenya ya"
+      ],
+      "responses": [
+        "34"
+      ]
+    },
+    {
+      "tag": "35",
+      "patterns": [
+        "aku mau pesan cheese cake", 
+        "aku mau cheese cake",
+        "cheese cake",
+        "pesan cheese cake", 
+        "mau cheese cake", 
+        "cheese cakenya ya"
+      ],
+      "responses": [
+        "35"
+      ]
+    },
+    {
+      "tag": "36",
+      "patterns": [
+        "aku mau pesan red velvet cake", 
+        "aku mau red velvet cake",
+        "red velvet cake",
+        "pesan red velvet cake", 
+        "mau red velvet cake", 
+        "red velvet cakenya ya"
+      ],
+      "responses": [
+        "36"
+      ]
+    },
+    {
+      "tag": "37",
+      "patterns": [
+        "aku mau pesan berry cake", 
+        "aku mau berry cake",
+        "berry cake",
+        "pesan berry cake", 
+        "mau berry cake", 
+        "berry cakenya ya"
+      ],
+      "responses": [
+        "37"
+      ]
+    },
+    {
+      "tag": "38",
+      "patterns": [
+        "aku mau pesan cupcake", 
+        "aku mau cupcake",
+        "cupcake",
+        "pesan cupcake", 
+        "mau cupcake", 
+        "cupcakenya ya"
+      ],
+      "responses": [
+        "38"
+      ]
+    },
+    {
+      "tag": "39",
+      "patterns": [
+        "aku mau pesan pancake", 
+        "aku mau pancake",
+        "pancake",
+        "pesan pancake", 
+        "mau pancake", 
+        "pancakenya ya"
+      ],
+      "responses": [
+        "39"
+      ]
+    },
+    {
+      "tag": "40",
+      "patterns": [
+        "aku mau pesan brownies", 
+        "aku mau brownies",
+        "brownies",
+        "pesan brownies", 
+        "mau brownies", 
+        "browniesnya ya"
+      ],
+      "responses": [
+        "40"
+      ]
+    },
+    {
+      "tag": "41",
+      "patterns": [
+        "aku mau pesan crepes", 
+        "aku mau crepes",
+        "crepes",
+        "pesan crepes", 
+        "mau crepes", 
+        "crepesnya ya"
+      ],
+      "responses": [
+        "41"
+      ]
+    },
+    {
+      "tag": "42",
+      "patterns": [
+        "aku mau pesan croffle", 
+        "aku mau croffle",
+        "croffle",
+        "pesan croffle", 
+        "mau croffle", 
+        "crofflenya ya"
+      ],
+      "responses": [
+        "42"
+      ]
+    },
+    {
+      "tag": "43",
+      "patterns": [
+        "aku mau pesan glazed donuts", 
+        "aku mau glazed donuts",
+        "glazed donuts",
+        "pesan glazed donuts", 
+        "mau glazed donuts", 
+        "glazed donutsnya ya"
+      ],
+      "responses": [
+        "43"
+      ]
+    },
+    {
+      "tag": "44",
+      "patterns": [
+        "aku mau pesan roti bakar", 
+        "aku mau roti bakar",
+        "roti bakar",
+        "pesan roti bakar", 
+        "mau roti bakar", 
+        "roti bakarnya ya"
+      ],
+      "responses": [
+        "44"
+      ]
+    },
+    {
+      "tag": "45",
+      "patterns": [
+        "aku mau pesan mochi", 
+        "aku mau mochi",
+        "mochi",
+        "pesan mochi", 
+        "mau mochi", 
+        "mochinya ya"
+      ],
+      "responses": [
+        "45"
+      ]
+    },
+    {
+      "tag": "46",
+      "patterns": [
+        "aku mau pesan ice cream", 
+        "aku mau ice cream",
+        "ice cream",
+        "pesan ice cream", 
+        "mau ice cream", 
+        "ice creamnya ya"
+      ],
+      "responses": [
+        "46"
+      ]
+    },
+    {
+      "tag": "47",
+      "patterns": [
+        "aku mau pesan gelato", 
+        "aku mau gelato",
+        "gelato",
+        "pesan gelato", 
+        "mau gelato", 
+        "gelatonya ya"
+      ],
+      "responses": [
+        "47"
+      ]
+    },
+    {
+      "tag": "48",
+      "patterns": [
+        "aku mau pesan pudding", 
+        "aku mau pudding",
+        "pudding",
+        "pesan pudding", 
+        "mau pudding", 
+        "puddingnya ya"
+      ],
+      "responses": [
+        "48"
+      ]
+    },
+    {
+      "tag": "49",
+      "patterns": [
+        "aku mau pesan jus alpukat", 
+        "aku mau jus alpukat",
+        "jus alpukat",
+        "pesan jus alpukat", 
+        "mau jus alpukat", 
+        "jus alpukatnya ya"
+      ],
+      "responses": [
+        "49"
+      ]
+    },
+    {
+      "tag": "50",
+      "patterns": [
+        "aku mau pesan jus anggur", 
+        "aku mau jus anggur",
+        "jus anggur",
+        "pesan jus anggur", 
+        "mau jus anggur", 
+        "jus anggurnya ya"
+      ],
+      "responses": [
+        "50"
+      ]
+    },
+    {
+      "tag": "51",
+      "patterns": [
+        "aku mau pesan jus apel", 
+        "aku mau jus apel",
+        "jus apel",
+        "pesan jus apel", 
+        "mau jus apel", 
+        "jus apelnya ya"
+      ],
+      "responses": [
+        "51"
+      ]
+    },
+    {
+      "tag": "52",
+      "patterns": [
+        "aku mau pesan jus apricot", 
+        "aku mau jus apricot",
+        "jus apricot",
+        "pesan jus apricot", 
+        "mau jus apricot", 
+        "jus apricotnya ya"
+      ],
+      "responses": [
+        "52"
+      ]
+    },
+    {
+      "tag": "53",
+      "patterns": [
+        "aku mau pesan jus belimbing", 
+        "aku mau jus belimbing",
+        "jus belimbing",
+        "pesan jus belimbing", 
+        "mau jus belimbing", 
+        "jus belimbingnya ya"
+      ],
+      "responses": [
+        "53"
+      ]
+    },
+    {
+      "tag": "54",
+      "patterns": [
+        "aku mau pesan jus buah naga", 
+        "aku mau jus buah naga",
+        "jus buah naga",
+        "pesan jus buah naga", 
+        "mau jus buah naga", 
+        "jus buah naganya ya"
+      ],
+      "responses": [
+        "54"
+      ]
+    },
+    {
+      "tag": "55",
+      "patterns": [
+        "aku mau pesan jus bluberi", 
+        "aku mau jus bluberi",
+        "jus bluberi",
+        "pesan jus bluberi", 
+        "mau jus bluberi", 
+        "jus bluberinya ya"
+      ],
+      "responses": [
+        "55"
+      ]
+    },
+    {
+      "tag": "56",
+      "patterns": [
+        "aku mau pesan jus jambu", 
+        "aku mau jus jambu",
+        "jus jambu",
+        "pesan jus jambu", 
+        "mau jus jambu", 
+        "jus jambunya ya"
+      ],
+      "responses": [
+        "56"
+      ]
+    },
+    {
+      "tag": "57",
+      "patterns": [
+        "aku mau pesan jus jeruk", 
+        "aku mau jus jeruk",
+        "jus jeruk",
+        "pesan jus jeruk", 
+        "mau jus jeruk", 
+        "jus jeruknya ya"
+      ],
+      "responses": [
+        "57"
+      ]
+    },
+    {
+      "tag": "58",
+      "patterns": [
+        "aku mau pesan jus kiwi", 
+        "aku mau jus kiwi",
+        "jus kiwi",
+        "pesan jus kiwi", 
+        "mau jus kiwi", 
+        "jus kiwinya ya"
+      ],
+      "responses": [
+        "58"
+      ]
+    },
+    {
+      "tag": "59",
+      "patterns": [
+        "aku mau pesan jus leci", 
+        "aku mau jus leci",
+        "jus leci",
+        "pesan jus leci", 
+        "mau jus leci", 
+        "jus lecinya ya"
+      ],
+      "responses": [
+        "59"
+      ]
+    },
+    {
+      "tag": "60",
+      "patterns": [
+        "aku mau pesan jus mangga", 
+        "aku mau jus mangga",
+        "jus mangga",
+        "pesan jus mangga", 
+        "mau jus mangga", 
+        "jus mangganya ya"
+      ],
+      "responses": [
+        "60"
+      ]
+    },
+    {
+      "tag": "61",
+      "patterns": [
+        "aku mau pesan jus manggis", 
+        "aku mau jus manggis",
+        "jus manggis",
+        "pesan jus manggis", 
+        "mau jus manggis", 
+        "jus manggisnya ya"
+      ],
+      "responses": [
+        "61"
+      ]
+    },
+    {
+      "tag": "62",
+      "patterns": [
+        "aku mau pesan jus melon", 
+        "aku mau jus melon",
+        "jus melon",
+        "pesan jus melon", 
+        "mau jus melon", 
+        "jus melonnya ya"
+      ],
+      "responses": [
+        "62"
+      ]
+    },
+    {
+      "tag": "63",
+      "patterns": [
+        "aku mau pesan jus nanas", 
+        "aku mau jus nanas",
+        "jus nanas",
+        "pesan jus nanas", 
+        "mau jus nanas", 
+        "jus nanasnya ya"
+      ],
+      "responses": [
+        "63"
+      ]
+    },
+    {
+      "tag": "64",
+      "patterns": [
+        "aku mau pesan jus pisang", 
+        "aku mau jus pisang",
+        "jus pisang",
+        "pesan jus pisang", 
+        "mau jus pisang", 
+        "jus pisangnya ya"
+      ],
+      "responses": [
+        "64"
+      ]
+    },
+    {
+      "tag": "65",
+      "patterns": [
+        "aku mau pesan jus peach", 
+        "aku mau jus peach",
+        "jus peach",
+        "pesan jus peach", 
+        "mau jus peach", 
+        "jus peachnya ya"
+      ],
+      "responses": [
+        "65"
+      ]
+    },
+    {
+      "tag": "66",
+      "patterns": [
+        "aku mau pesan jus pepaya", 
+        "aku mau jus pepaya",
+        "jus pepaya",
+        "pesan jus pepaya", 
+        "mau jus pepaya", 
+        "jus pepayanya ya"
+      ],
+      "responses": [
+        "66"
+      ]
+    },
+    {
+      "tag": "67",
+      "patterns": [
+        "aku mau pesan jus semangka", 
+        "aku mau jus semangka",
+        "jus semangka",
+        "pesan jus semangka", 
+        "mau jus semangka", 
+        "jus semangkanya ya"
+      ],
+      "responses": [
+        "67"
+      ]
+    },
+    {
+      "tag": "68",
+      "patterns": [
+        "aku mau pesan jus sirsak", 
+        "aku mau jus sirsak",
+        "jus sirsak",
+        "pesan jus sirsak", 
+        "mau jus sirsak", 
+        "jus sirsaknya ya"
+      ],
+      "responses": [
+        "68"
+      ]
+    },
+    {
+      "tag": "69",
+      "patterns": [
+        "aku mau pesan jus stroberi", 
+        "aku mau jus stroberi",
+        "jus stroberi",
+        "pesan jus stroberi", 
+        "mau jus stroberi", 
+        "jus stroberinya ya"
+      ],
+      "responses": [
+        "69"
+      ]
+    },
+    {
+      "tag": "70",
+      "patterns": [
+        "aku mau pesan air mineral", 
+        "aku mau air mineral",
+        "air mineral",
+        "pesan air mineral", 
+        "mau air mineral", 
+        "air mineralnya ya"
+      ],
+      "responses": [
+        "70"
+      ]
+    },
+    {
+      "tag": "71",
+      "patterns": [
+        "aku mau pesan milkshake", 
+        "aku mau milkshake",
+        "milkshake",
+        "pesan milkshake", 
+        "mau milkshake", 
+        "milkshakenya ya"
+      ],
+      "responses": [
+        "71"
+      ]
+    },
+    {
+      "tag": "72",
+      "patterns": [
+        "aku mau pesan fruit tea", 
+        "aku mau fruit tea",
+        "fruit tea",
+        "pesan fruit tea", 
+        "mau fruit tea", 
+        "fruit teanya ya"
+      ],
+      "responses": [
+        "72"
+      ]
+    },
+    {
+      "tag": "73",
+      "patterns": [
+        "aku mau pesan latte", 
+        "aku mau latte",
+        "latte",
+        "pesan latte", 
+        "mau latte", 
+        "lattenya ya"
+      ],
+      "responses": [
+        "73"
+      ]
+    },
+    {
+      "tag": "74",
+      "patterns": [
+        "aku mau pesan cappuccino", 
+        "aku mau cappuccino",
+        "cappuccino",
+        "pesan cappuccino", 
+        "mau cappuccino", 
+        "cappuccinonya ya"
+      ],
+      "responses": [
+        "74"
+      ]
+    },
+    {
+      "tag": "75",
+      "patterns": [
+        "aku mau pesan macchiato", 
+        "aku mau macchiato",
+        "macchiato",
+        "pesan macchiato", 
+        "mau macchiato", 
+        "macchiatonya ya"
+      ],
+      "responses": [
+        "75"
+      ]
+    },
+    {
+      "tag": "76",
+      "patterns": [
+        "aku mau pesan ice blend", 
+        "aku mau ice blend",
+        "ice blend",
+        "pesan ice blend", 
+        "mau ice blend", 
+        "ice blendnya ya"
+      ],
+      "responses": [
+        "76"
+      ]
+    },
+    {
+      "tag": "77",
+      "patterns": [
+        "aku mau pesan iced tea", 
+        "aku mau iced tea",
+        "iced tea",
+        "pesan iced tea", 
+        "mau iced tea", 
+        "iced teanya ya"
+      ],
+      "responses": [
+        "77"
+      ]
+    },
+    {
+      "tag": "78",
+      "patterns": [
+        "aku mau pesan ice chocolate", 
+        "aku mau ice chocolate",
+        "ice chocolate",
+        "pesan ice chocolate", 
+        "mau ice chocolate", 
+        "ice chocolatenya ya"
+      ],
+      "responses": [
+        "78"
+      ]
+    },
+    {
+      "tag": "79",
+      "patterns": [
+        "aku mau pesan hot chocolate", 
+        "aku mau hot chocolate",
+        "hot chocolate",
+        "pesan hot chocolate", 
+        "mau hot chocolate", 
+        "hot chocolatenya ya"
+      ],
+      "responses": [
+        "79"
+      ]
+    },
+    {
+      "tag": "80",
+      "patterns": [
+        "aku mau pesan hot tea", 
+        "aku mau hot tea",
+        "hot tea",
+        "pesan hot tea", 
+        "mau hot tea", 
+        "hot teanya ya"
+      ],
+      "responses": [
+        "80"
+      ]
+    },
+    {
+      "tag": "81",
+      "patterns": [
+        "aku mau pesan green tea float", 
+        "aku mau green tea float",
+        "green tea float",
+        "pesan green tea float", 
+        "mau green tea float", 
+        "green tea floatnya ya"
+      ],
+      "responses": [
+        "81"
+      ]
+    },
+    {
+      "tag": "82",
+      "patterns": [
+        "aku mau pesan berry float", 
+        "aku mau berry float",
+        "berry float",
+        "pesan berry float", 
+        "mau berry float", 
+        "berry floatnya ya"
+      ],
+      "responses": [
+        "82"
+      ]
+    },
+    {
+      "tag": "83",
+      "patterns": [
+        "aku mau pesan mocha float", 
+        "aku mau mocha float",
+        "mocha float",
+        "pesan mocha float", 
+        "mau mocha float", 
+        "mocha floatnya ya"
+      ],
+      "responses": [
+        "83"
+      ]
+    },
+    {
+      "tag": "recomendation",
+      "patterns": [
+        "best seller makanan",
+        "rekomendasi makanan",
+        "makanan yang enak"
+      ],
+      "responses": [
+        "recomendation"
+      ]
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "Bisakah pesanan saya diantar?",
+        "Bisakah pesanan saya dikirim?",
+        "Pesanan saya bisa dikirim?",
+        "Berapa lama pengantaran?",
+        "Apakah ada biaya pengiriman?"
+      ],
+      "responses": [
+        "Ya, kami menyediakan layanan pengantaran. Waktu pengantaran biasanya sekitar 30-45 menit. Biaya pengiriman akan tergantung pada lokasi pengantaran."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Dah",
+        "Dadah",
+        "Bye",
+        "Byee",
+        "Good bye",
+        "Selamat tinggal",
+        "Sampai jumpa",
+        "Bai",
+        "See you"
+      ],
+      "responses": [
+        "Bye!",
+        "Dadahh!",
+        "Good bye!",
+        "Dahh, semoga harimu menyenangkan yaa!",
+        "Sampai jumpa lagi!",
+        "See u! Senang bisa membantu"
+      ]
+    },
+    {
+      "tag": "terimakasih",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "Terima kasih",
+        "Makasih",
+        "Terima kasih banyak"
+      ],
+      "responses": [
+        "Dengan senang hati :)",
+        "Sama-sama yaa"
+      ]
+    }
+  ]
+}

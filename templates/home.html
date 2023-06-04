@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Smart Serve</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Icon -->
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='favicon.ico') }}"
+    />
+
+    <!-- Favicons -->
+    <link
+      href="{{ url_for('static', filename='/assets/img/favicon.png') }}"
+      rel="icon"
+    />
+    <link
+      href="{{ url_for('static', filename='/assets/img/apple-touch-icon.png') }}"
+      rel="apple-touch-icon"
+    />
+
+    <!-- Google Fonts -->
+    <!-- <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    /> -->
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="{{ url_for('static', filename='/assets/vendor/bootstrap/css/bootstrap.min.css') }}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='/assets/vendor/boxicons/css/boxicons.min.css') }}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='/assets/vendor/glightbox/css/glightbox.min.css') }}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='/assets/vendor/remixicon/remixicon.css') }}"
+      rel="stylesheet"
+    />
+    <link
+      href="{{ url_for('static', filename='/assets/vendor/swiper/swiper-bundle.min.css') }}"
+      rel="stylesheet"
+    />
+
+    <!-- Template Main CSS File -->
+    <link
+      href="{{ url_for('static', filename='/assets/css/style.css') }}"
+      rel="stylesheet"
+    />
+
+    <!-- Jquery JavaScript -->
+	  <script src={{ url_for('static', filename='/js/jquery_3.6.0.min.js') }} ></script>
+    <script src={{ url_for('static', filename='/js/bootstrap_3.4.1.min.js') }} ></script>
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div
+            class="col-xl-9 d-flex align-items-center justify-content-lg-between"
+          >
+            <h1 class="logo me-auto me-lg-0">
+              <a href="home.html">Smart Serve</a>
+            </h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+              <ul>
+                <li>
+                  <a class="nav-link scrollto active" href="#hero">Home</a>
+                </li>
+                <li><a class="nav-link scrollto" href="#about">About</a></li>
+                <li>
+                  <a class="nav-link scrollto" href="#services">Services</a>
+                </li>
+                <li>
+                  <a class="nav-link scrollto" href="#pricing">Team</a>
+                </li>
+                <li>
+                  <a class="nav-link scrollto" href="#contact">Contact</a>
+                </li>
+              </ul>
+              <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+
+            <a href="#demo" class="get-started-btn scrollto">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex flex-column justify-content-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-8">
+            <h1>Smart Serve - Make Your Own Best Maid</h1>
+            <h2>
+              We are team of designers making Maid with Artificial Intelligence
+            </h2>
+            <a
+              href="https://www.youtube.com/watch?v=jDDaplaOz7Q"
+              class="glightbox play-btn mb-4"
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+      <!-- ======= About Us Section ======= -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="section-title">
+            <h2>About Us</h2>
+            <p>
+              Selamat datang di SmartServe, solusi inovatif dalam pemesanan makanan yang menggabungkan kecerdasan buatan dan chatbot. Kami percaya bahwa memesan makanan favoritmu seharusnya menjadi pengalaman yang praktis, cerdas, dan memuaskan.
+            </p>
+          </div>
+
+          <div class="row content">
+            <div class="col-lg-6">
+              <ul>
+                <li>
+                  <i class="ri-check-double-line"></i>
+                  Memudahkan pengguna dalam menjelajahi beragam pilihan menu dan memesan makanan favorit secara praktis.
+                </li>
+                <li>
+                  <i class="ri-check-double-line"></i> 
+                  Menyediakan chatbot AI yang memberikan pengalaman percakapan alami dalam proses pemesanan.
+                </li>
+                <li>
+                  <i class="ri-check-double-line"></i> 
+                  Menekankan kemudahan penggunaan, kecepatan, dan kualitas dalam setiap pesanan yang dibuat.
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0">
+              <p>
+                Kami bersemangat untuk membantu kamu menemukan kelezatan kuliner di kenyamanan rumahmu. Nikmati makanan favoritmu tanpa repot dengan aplikasi kami yang cerdas dan inovatif.
+              </p>
+              <a href="#" class="btn-learn-more">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Us Section -->
+
+      <!-- ======= Services Section ======= -->
+      <section id="services" class="services">
+        <div class="container">
+          <div class="section-title">
+            <h2>Services</h2>
+            <p>
+              Smart Serve merupakan solusi teknologi yang memanfaatkan algoritma
+              AI untuk menyediakan pengalaman pengguna yang lebih baik dan
+              efisien dalam memesan makanan/minuman/barang. Berikut adalah
+              deskripsi mengenai beberapa layanan yang bisa disediakan oleh
+              aplikasi Smart Serve:
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="icon-box">
+                <div class="icon"><i class="bi bi-chat-dots"></i></div>
+                <h4><a href="javascript:void(0)">Chatbot Pemesanan</a></h4>
+                <p>
+                  Aplikasi ini dilengkapi dengan chatbot AI yang dapat membantu
+                  pengguna dalam proses pemesanan. Chatbot ini dapat menangani
+                  pertanyaan, memberikan rekomendasi, dan mengambil pesanan
+                  pengguna secara efisien. Mereka juga dapat belajar dari
+                  interaksi dengan pengguna untuk memberikan pengalaman yang
+                  lebih baik dari waktu ke waktu.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bi bi-heart"></i></div>
+                <h4><a href="javascript:void(0)">Sistem Rekomendasi</a></h4>
+                <p>
+                  Aplikasi ini menggunakan AI dapat menganalisis preferensi
+                  pengguna, histori pesanan sebelumnya, dan data pengguna
+                  lainnya untuk memberikan rekomendasi makanan yang relevan dan
+                  disesuaikan dengan selera pengguna. Ini membantu pengguna
+                  menemukan makanan baru yang sesuai dengan preferensi mereka.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0"
+            >
+              <div class="icon-box">
+                <div class="icon"><i class="bi bi-chat-square-text"></i></div>
+                <h4>
+                  <a href="javascript:void(0)">Analisis Data dan Umpan Balik</a>
+                </h4>
+                <p>
+                  Aplikasi ini menggunakan AI dapat mengumpulkan dan
+                  menganalisis data pengguna, termasuk preferensi makanan,
+                  kebiasaan pemesanan, dan umpan balik. Dengan menganalisis data
+                  ini, aplikasi dapat memberikan rekomendasi yang lebih baik di
+                  masa depan, meningkatkan kualitas layanan, dan menyesuaikan
+                  tawaran promosi berdasarkan preferensi pengguna.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Services Section -->
+
+      <!-- ======= Cta Section ======= -->
+      <section id="cta" class="cta">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 text-center text-lg-start">
+              <h3>Call To Action</h3>
+              <p>
+                Sambut kecerdasan buatan dalam pesanan makanan! Gunakan aplikasi chatbot AI kami untuk memesan hidangan favoritmu dengan mudah. Chatbot kami akan membantu memilih restoran, menjawab pertanyaan, dan memberikan rekomendasi yang disesuaikan dengan preferensimu. Pesan sekarang dan nikmati pengalaman pemesanan yang cerdas!
+              </p>
+            </div>
+            <div class="col-lg-3 cta-btn-container text-center">
+              <a class="cta-btn align-middle" href="#">Call To Action</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Cta Section -->
+
+      <!-- ======= Features Section ======= -->
+      <section id="demo" class="demo" style="margin-bottom: 100px">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg order-2 order-lg-1">
+              <div
+                class="card text-bg-dark"
+                style="
+                  width: 100%;
+                  min-height: 600px;
+                  background-image: url('../static/images/wallpaper-chat.jpg');
+                "
+              >
+                <div class="card-img-overlay d-flex flex-row">                  
+                  <div class="row align-self-end w-100 justify-content-center">
+                    <div class="col-md-8">
+                      <div class="container chat-logs1" style="max-height:fit-content">
+
+                      </div>
+                      <div class="input-group mb-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="chat-input1"
+                          placeholder="Let's Order Something.."
+                          aria-label="Let's Order Something.."
+                          aria-describedby="button-addon2"
+                        />
+                        <button
+                          class="btn btn-secondary"
+                          type="button"
+                          id="chat-submit1"
+                        >
+                          <i class="bi bi-send"></i>
+                        </button>
+                        <button class="btn btn-danger" type="button">
+                          <i class="bi bi-mic-fill"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Features Section -->
+
+      <!-- ======= Counts Section ======= -->
+      <section id="counts" class="counts">
+        <div class="container">
+          <div class="text-center title">
+            <h3>What we have achieved so far</h3>
+          </div>
+
+          <div class="row counters position-relative">
+            <div class="col-lg-3 col-6 text-center">
+              <span
+                data-purecounter-start="0"
+                data-purecounter-end="232"
+                data-purecounter-duration="1"
+                class="purecounter"
+              ></span>
+              <p>Clients</p>
+            </div>
+
+            <div class="col-lg-3 col-6 text-center">
+              <span
+                data-purecounter-start="0"
+                data-purecounter-end="521"
+                data-purecounter-duration="1"
+                class="purecounter"
+              ></span>
+              <p>Restaurant</p>
+            </div>
+
+            <div class="col-lg-3 col-6 text-center">
+              <span
+                data-purecounter-start="0"
+                data-purecounter-end="1463"
+                data-purecounter-duration="1"
+                class="purecounter"
+              ></span>
+              <p>Hours Of Support</p>
+            </div>
+
+            <div class="col-lg-3 col-6 text-center">
+              <span
+                data-purecounter-start="0"
+                data-purecounter-end="15"
+                data-purecounter-duration="1"
+                class="purecounter"
+              ></span>
+              <p>Hard Workers</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Counts Section -->
+
+      <!-- ======= Pricing Section ======= -->
+      <section id="pricing" class="pricing">
+        <div class="container">
+          <div class="section-title">
+            <h2>Team</h2>
+            <p>Team dari Project Aplikasi Smart Serve terdiri dari :</p>
+          </div>
+
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-2 col-md-6">
+              <div class="box">
+                <h3>Nur Azizah</h3>
+                <!-- <h4><sup>$</sup>0<span> / month</span></h4> -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="60"
+                  height="60"
+                  fill="currentColor"
+                  class="bi bi-person-circle"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                  <path
+                    fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+                  />
+                </svg>
+                <ul>
+                  <li>STIE<br />Pembangunan Tanjungpinang</li>
+                </ul>
+                <div class="btn-wrap">
+                  <a href="#" class="btn-buy">Contact</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6 mt-4 mt-lg-0">
+              <div class="box">
+                <h3>Sarifa<br /><span class="text-white">.</span></h3>
+                <!-- <h4><sup>$</sup>29<span> / month</span></h4> -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="60"
+                  height="60"
+                  fill="currentColor"
+                  class="bi bi-person-circle"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                  <path
+                    fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+                  />
+                </svg>
+                <ul>
+                  <li>Universitas<br />Malikussaleh</li>
+                </ul>
+                <div class="btn-wrap">
+                  <a href="#" class="btn-buy">Contact</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6 mt-4 mt-md-0">
+              <div class="box recommended">
+                <span class="recommended-badge">Ketua</span>
+                <h3>Vicky<br /><span class="text-white">.</span></h3>
+                <!-- <h4><sup>$</sup>19<span> / month</span></h4> -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="60"
+                  height="60"
+                  fill="currentColor"
+                  class="bi bi-person-circle"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                  <path
+                    fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+                  />
+                </svg>
+                <ul>
+                  <li>Universitas <br />Mikroskil</li>
+                </ul>
+                <div class="btn-wrap">
+                  <a href="#" class="btn-buy">Contact</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6">
+              <div class="box">
+                <h3>M. Aulia Abdurrahman</h3>
+                <!-- <h4><sup>$</sup>0<span> / month</span></h4> -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="60"
+                  height="60"
+                  fill="currentColor"
+                  class="bi bi-person-circle"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                  <path
+                    fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+                  />
+                </svg>
+                <ul>
+                  <li>Universitas <br />Bengkulu</li>
+                </ul>
+                <div class="btn-wrap">
+                  <a href="#" class="btn-buy">Contact</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6">
+              <div class="box">
+                <h3>Juliawati<br /><span class="text-white">.</span></h3>
+                <!-- <h4><sup>$</sup>0<span> / month</span></h4> -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="60"
+                  height="60"
+                  fill="currentColor"
+                  class="bi bi-person-circle"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                  <path
+                    fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+                  />
+                </svg>
+                <ul>
+                  <li>Universitas<br />Malikussaleh</li>
+                </ul>
+                <div class="btn-wrap">
+                  <a href="#" class="btn-buy">Contact</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Pricing Section -->
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-title">
+            <h2>Contact</h2>
+          </div>
+        </div>
+
+        <div>
+          <iframe
+            style="border: 0; width: 100%; height: 350px"
+            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Medan&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="container">
+          <div class="row mt-5">
+            <div class="col-lg-4">
+              <div class="info">
+                <div class="address">
+                  <i class="ri-map-pin-line"></i>
+                  <h4>Location:</h4>
+                  <p>Medan</p>
+                </div>
+
+                <div class="email">
+                  <i class="ri-mail-line"></i>
+                  <h4>Email:</h4>
+                  <p>email@gamil.com</p>
+                </div>
+
+                <div class="phone">
+                  <i class="ri-phone-line"></i>
+                  <h4>Call:</h4>
+                  <p>+62 1234 1231 23</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-8 mt-5 mt-lg-0">
+              <form action="" method="post" role="form" class="php-email-form">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="subject"
+                    id="subject"
+                    placeholder="Subject"
+                    required
+                  />
+                </div>
+                <div class="form-group mt-3">
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    rows="5"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">
+                    Your message has been sent. Thank you!
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button type="submit">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">
+        <h3>Smart Serve</h3>
+        <p>Smart Serve Hadir Membantu Bisnis Anda</p>
+        <div class="social-links">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+        <div class="copyright">
+          &copy; Copyright <strong><span>Smart Serve</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/knight-simple-one-page-bootstrap-template/ -->
+          Designed by <a href="https://github.com/LuckyDevelop">LuckyDevelop</a>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="{{ url_for('static', filename='/assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
+    <script src="{{ url_for('static', filename='/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='/assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='/assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='/assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='/assets/vendor/php-email-form/validate.js') }}"></script>
+
+    <!-- Template Main JS File -->
+    <script src="{{ url_for('static', filename='/assets/js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='/js/jquery.js') }}"></script>
+  </body>
+</html>
